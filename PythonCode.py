@@ -1,4 +1,4 @@
-#This Function is given the Array A and trys to find the missing element in the array
+#This Function is given the Array A and tries to find the missing element in the array
 #with all distinct elements in A
 #and each element of array A is an integer within the range [1..(N + 1)]
 # and N is an integer within the range [0..100,000]
@@ -20,7 +20,7 @@ def PermMissingElem_solution(A):
 
 ##\\_______________________________________________________________________________________________________//##
 
-# the goal is to find the smallest positive integer that does not occur the list A.
+# the goal is to find the smallest positive integer that does not occur in the list A.
 # where each element of array A is an integer within the range [−1,000,000..1,000,000]
 def MissingInteger_solution(A):
 
@@ -44,7 +44,7 @@ def MissingInteger_solution(A):
 # where X is the start position, Y is the target position and D is the fixed jump distance
 def FrogJump_solution(X, Y, D):
   # we subtract the target distance by the start position before 
-  # adding an extra jump just in case we fall short and if we dont, we subtract 1 off D because we floor divide this whole equation by D to find the amount of jumps
+  # adding an extra jump just in case we fall short and if we don't, we subtract 1 off D because we floor divide this whole equation by D to find the amount of jumps
   # Ex X = 0, Y = 10, D = 1
   # (10 - 0) = 10; 10 + (1-1) = 10; 10 // 1 = 10 and this makes sense as the frog needs to jump 10 times to reach his target distance
   return ((Y - X) + (D - 1)) // D
@@ -61,7 +61,7 @@ def CyclicRotation_solution(A, K):
   # grab the length of the list and call it N    
   N = len(A)
 
-  # reduce unnecessary rotations if K is greater than the array length; and if K = 0 after the reduction then we dont change the list and return it
+  # reduce unnecessary rotations if K is greater than the array length; and if K = 0 after the reduction then we don't change the list and return it
   K = K % N
   if K == 0: 
     return A
