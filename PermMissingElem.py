@@ -1,3 +1,7 @@
+#This Function is given the Array A and trys to find the missing element in the array
+#with all distinct elements in A
+#and each element of array A is an integer within the range [1..(N + 1)]
+# and N is an integer within the range [0..100,000]
 def solution(A):
   #checks if the list is empty
   # if so it returns the default value of 1
